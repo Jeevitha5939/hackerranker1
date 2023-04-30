@@ -1,0 +1,19 @@
+from collections import Counter
+def cutTheSticks(arr):
+    n=len(arr)
+    res=[]
+    s=Counter(arr)
+    for i in sorted(s.keys()):
+        res.append(n)
+        n-=s[i]
+    return res
+    
+    
+    
+     # n= length of the array given
+     # result will be stored in list []
+     # s will have all the key and value i.e stick, count of each stick.
+     # sorted will be used to sort all the values in asscending order
+     # append will be used to append answer to the result list ...
+     # length n will get subtracted by s[i] least value as sorted is used.
+       
